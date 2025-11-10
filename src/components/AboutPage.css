@@ -1,0 +1,502 @@
+.about-page {
+  padding-top: 70px; /* Adjust for fixed header */
+}
+  
+.page-header {
+  background-color: #e85504; /* TruPath orange */
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+  position: relative;
+  margin-bottom: 60px;
+}
+  
+.page-header:after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  margin-left: -20px;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #e85504;
+}
+  
+.page-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+  
+.page-header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Container styling - added to match other pages */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px; /* Increased padding */
+  width: 100%;
+}
+  
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+  
+.about-image {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+  
+.about-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease;
+}
+  
+.about-image:hover img {
+  transform: scale(1.03);
+}
+  
+.about-text {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+  
+.about-text h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 15px;
+}
+  
+.about-text h2:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: #e85504;
+}
+  
+.about-text p {
+  margin-bottom: 20px;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* Mission and Values Section Styles */
+.mission-section {
+  margin: 60px 0;
+  position: relative;
+}
+
+.mission-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #222;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.mission-section h2:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: #e85504;
+}
+
+.mission-statement {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  margin-bottom: 40px;
+}
+
+.mission-statement h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.mission-statement p {
+  line-height: 1.7;
+  color: #555;
+}
+
+.values-section {
+  margin-top: 40px;
+}
+
+.values-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  color: #333;
+  text-align: center;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 30px;
+  position: relative;
+  z-index: 1;
+}
+  
+.value-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 35px 25px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #eaeaea;
+  text-align: center;
+}
+  
+.value-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+  
+.value-icon {
+  font-size: 2.5rem;
+  color: #e85504;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+  
+.value-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #222;
+}
+  
+.value-card p {
+  color: #666;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Elkhart Section Styles */
+.elkhart-section {
+  margin: 60px 0;
+}
+
+.elkhart-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #222;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.elkhart-section h2:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: #e85504;
+}
+
+.elkhart-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+  align-items: center;
+}
+
+.elkhart-image {
+  position: relative;
+}
+
+.image-placeholder {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+  border: 1px dashed #ccc;
+}
+
+.placeholder-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: #e85504;
+}
+
+.elkhart-text {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.elkhart-text p {
+  margin-bottom: 20px;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* Leadership Section Styles */
+.leadership-section {
+  margin: 60px 0;
+}
+
+.leadership-section h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #222;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.leadership-section h2:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: #e85504;
+}
+
+.leadership-intro {
+  margin-bottom: 40px;
+  max-width: 800px;
+  color: #555;
+  line-height: 1.7;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.team-member {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.team-photo-placeholder {
+  background-color: #e85504;
+  color: white;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.team-info {
+  padding: 20px;
+}
+
+.team-info h3 {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.team-title {
+  color: #e85504;
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+}
+
+.team-bio {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* CTA Section */
+.cta-section {
+  background: linear-gradient(135deg, #e85504, #ff8a50);
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+  border-radius: 10px;
+  margin: 50px 20px; /* Added horizontal margin */
+}
+  
+.cta-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+  
+.cta-content h2 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+  
+.cta-content p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+  
+.cta-btns {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+  
+/* Button styles */
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+  
+.btn-primary {
+  background-color: #e85504;
+  color: white;
+  border: 2px solid #e85504;
+}
+  
+.btn-primary:hover {
+  background-color: #d14800;
+  border-color: #d14800;
+}
+  
+.btn-secondary {
+  background-color: transparent;
+  color: #e85504;
+  border: 2px solid #e85504;
+}
+  
+.btn-secondary:hover {
+  background-color: #e85504;
+  color: white;
+}
+  
+.cta-section .btn-primary {
+  background-color: white;
+  color: #e85504;
+  border: 2px solid white;
+}
+  
+.cta-section .btn-primary:hover {
+  background-color: transparent;
+  color: white;
+}
+  
+.cta-section .btn-secondary {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+  
+.cta-section .btn-secondary:hover {
+  background-color: white;
+  color: #e85504;
+}
+  
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .container {
+    padding: 0 30px; /* Adjusted padding for medium screens */
+  }
+}
+  
+@media (max-width: 768px) {
+  .page-header {
+    padding: 40px 0;
+  }
+    
+  .page-header h1 {
+    font-size: 2rem;
+  }
+    
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+    
+  .about-image {
+    margin-bottom: 30px;
+    order: -1;
+  }
+  
+  .elkhart-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .elkhart-image {
+    margin-bottom: 30px;
+  }
+    
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+    
+  .cta-section {
+    margin: 30px 15px;
+    padding: 40px 20px;
+  }
+    
+  .cta-btns {
+    flex-direction: column;
+    max-width: 250px;
+    margin: 0 auto;
+  }
+  
+  .container {
+    padding: 0 20px; /* Adjusted padding for mobile */
+  }
+}

@@ -1,0 +1,130 @@
+.legal-page {
+    padding-top: 70px; /* Adjust for fixed header */
+  }
+  
+  .page-header {
+    background-color: #e85504; /* TruPath orange */
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+    position: relative;
+    margin-bottom: 60px;
+  }
+  
+  .page-header:after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    margin-left: -20px;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #e85504;
+  }
+  
+  .page-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  
+  .page-header p {
+    font-size: 1rem;
+    opacity: 0.9;
+  }
+  
+  .legal-content {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    margin-bottom: 60px;
+  }
+  
+  .legal-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    position: relative;
+    padding-bottom: 15px;
+  }
+  
+  .legal-content h2:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #e85504;
+  }
+  
+  .legal-content > p {
+    margin-bottom: 30px;
+    line-height: 1.7;
+    color: #555;
+  }
+  
+  .legal-section {
+    margin-bottom: 40px;
+  }
+  
+  .legal-section h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .legal-section p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+    color: #555;
+  }
+  
+  .legal-section ul {
+    margin-bottom: 20px;
+    padding-left: 20px;
+  }
+  
+  .legal-section ul li {
+    margin-bottom: 10px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .contact-info {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 15px;
+  }
+  
+  .contact-info p {
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .page-header {
+      padding: 30px 0;
+    }
+    
+    .page-header h1 {
+      font-size: 2rem;
+    }
+    
+    .legal-content {
+      padding: 25px;
+    }
+    
+    .legal-content h2 {
+      font-size: 1.7rem;
+    }
+    
+    .legal-section h3 {
+      font-size: 1.3rem;
+    }
+  }

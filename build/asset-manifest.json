@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7fdda496.css",
+    "main.js": "/static/js/main.3277e87a.js",
+    "static/media/Bus.png": "/static/media/Bus.f2ec6b7ea09b523e2455.png",
+    "static/media/hero-bg.jpg": "/static/media/hero-bg.55603862c54622428b07.jpg",
+    "static/media/TPSV building.jpg": "/static/media/TPSV building.742d444b02e080d8bfe9.jpg",
+    "static/media/specialty-vehicle.jpg": "/static/media/specialty-vehicle.0fb5e36aa004cc74b9b4.jpg",
+    "static/media/work-truck.JPG": "/static/media/work-truck.90606b5a219199ed38a6.JPG",
+    "static/media/trupath-logo-orange.png": "/static/media/trupath-logo-orange.73352dcdb66efeb6014d.png",
+    "index.html": "/index.html",
+    "main.7fdda496.css.map": "/static/css/main.7fdda496.css.map",
+    "main.3277e87a.js.map": "/static/js/main.3277e87a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7fdda496.css",
+    "static/js/main.3277e87a.js"
+  ]
+}

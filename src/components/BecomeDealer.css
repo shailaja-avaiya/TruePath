@@ -1,0 +1,587 @@
+.dealer-page {
+    padding-top: 70px; /* Adjust for fixed header */
+  }
+  
+  .dealer-header {
+    background-color: #e85504; /* TruPath orange */
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+    position: relative;
+    margin-bottom: 60px;
+  }
+  
+  .dealer-header:after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    margin-left: -20px;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #e85504;
+  }
+  
+  .dealer-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+  }
+  
+  .dealer-header p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.9;
+  }
+  
+  /* Container styling - added to match other pages */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px; /* Increased padding */
+    width: 100%;
+  }
+  
+  /* Value Proposition */
+  .value-proposition {
+    margin-bottom: 60px;
+  }
+  
+  .value-proposition h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+    position: relative;
+    padding-bottom: 15px;
+  }
+  
+  .value-proposition h2:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #e85504;
+  }
+  
+  .value-proposition p {
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.6;
+  }
+  
+  /* Benefits Grid */
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .benefit-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #eaeaea;
+  }
+  
+  .benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .benefit-icon {
+    font-size: 2.5rem;
+    color: #e85504;
+    margin-bottom: 20px;
+  }
+  
+  .benefit-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .benefit-card p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  
+  /* Dealer Portal Preview */
+  .dealer-portal-preview {
+    background-color: #f8f8f8;
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 60px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  }
+  .dealer-portal-preview h1 {
+    text-align: center;
+    color: #333;
+    position: relative;
+    padding-bottom: 15px;
+  }
+  
+  .dealer-portal-preview h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+    position: relative;
+    padding-bottom: 15px;
+  }
+  
+  .dealer-portal-preview h2:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #e85504;
+  }
+  
+  .portal-features {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+  }
+  
+  .portal-features li {
+    padding: 12px 15px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .portal-features li:before {
+    content: "✓";
+    color: #e85504;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .portal-image-placeholder {
+    background-color: #e9e9e9;
+    border: 1px dashed #ccc;
+    border-radius: 5px;
+    padding: 30px;
+    text-align: center;
+    color: #777;
+  }
+  
+  .portal-image-placeholder p {
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+  }
+  
+  .portal-image-placeholder span {
+    font-size: 0.9rem;
+    font-style: italic;
+  }
+  
+  /* Application Form */
+  .application-section {
+    margin-bottom: 60px;
+  }
+  
+  .application-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+    position: relative;
+    padding-bottom: 15px;
+  }
+  
+  .application-section h2:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #e85504;
+  }
+  
+  .application-section > p {
+    margin-bottom: 30px;
+  }
+  
+  .dealer-application-form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    border: 1px solid #eaeaea;
+  }
+  
+  .form-section {
+    margin-bottom: 40px;
+  }
+  
+  .form-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+    color: #333;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .form-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #e85504;
+  }
+  
+  .checkbox-group {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .checkbox-group input {
+    width: auto;
+    margin-top: 5px;
+    margin-right: 10px;
+  }
+  
+  .checkbox-group label {
+    margin: 0;
+    font-weight: normal;
+    font-size: 0.9rem;
+    max-width: 90%;
+  }
+  
+  /* Form success message */
+  .form-success {
+    background-color: #e7f8ef;
+    border: 1px solid #c3e6cb;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .form-success h3 {
+    color: #28a745;
+    margin-bottom: 10px;
+  }
+  
+  .form-success p {
+    color: #333;
+  }
+  
+  /* Form error message */
+  .form-error {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #fff5f5;
+    border-left: 4px solid #f56565;
+    color: #c53030;
+  }
+  
+  /* CTA Section */
+  .dealer-cta-section {
+    background: linear-gradient(135deg, #e85504, #ff8a50);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+    margin: 50px 20px; /* Added horizontal margin */
+    border-radius: 10px; /* Added to match other CTA sections */
+  }
+  
+  .dealer-cta-section .cta-content {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .dealer-cta-section h2 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  .dealer-cta-section p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+  
+  .dealer-cta-section .btn {
+    display: inline-block;
+    padding: 14px 30px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: white;
+    color: #e85504;
+    border: 2px solid white;
+  }
+  
+  .dealer-cta-section .btn:hover {
+    background-color: transparent;
+    color: white;
+  }
+  
+  /* Button Styles */
+  .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    border: none;
+  }
+  
+  .btn-primary {
+    background-color: #e85504;
+    color: white;
+  }
+  
+  .btn-primary:hover {
+    background-color: #d14800;
+  }
+  
+  .btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+  
+  /* Partner with TPSV section styling */
+  .partner-section {
+    margin-bottom: 60px;
+  }
+  
+  .partner-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    position: relative;
+    padding-bottom: 15px;
+  }
+  
+  .partner-section h2:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #e85504;
+  }
+  
+  .partner-section p {
+    margin-bottom: 25px;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  .feature-group {
+    margin-bottom: 30px;
+  }
+  
+  .feature-group h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .feature-group h3 .icon {
+    color: #e85504;
+    margin-right: 10px;
+  }
+  
+  .feature-group p {
+    margin-bottom: 15px;
+    padding-left: 30px;
+  }
+  
+  /* Dealer Portal specific styling */
+  .portal-section {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    border: 1px solid #eee;
+  }
+  
+  .portal-section h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .portal-features-list {
+    margin-bottom: 25px;
+  }
+  
+  .portal-features-list li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .portal-features-list li:before {
+    content: "•";
+    color: #e85504;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-right: 10px;
+  }
+  
+  .portal-preview {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Application form styling */
+  .become-dealer-today {
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+  
+  .become-dealer-today h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .business-info-section {
+    margin-bottom: 30px;
+  }
+  
+  .business-info-section h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .form-input {
+    margin-bottom: 20px;
+  }
+  
+  .form-input label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .form-input input,
+  .form-input textarea,
+  .form-input select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 0;
+  }
+  
+  .form-row .form-input {
+    flex: 1 1 250px;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 992px) {
+    .benefits-grid,
+    .portal-features {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .container {
+      padding: 0 30px; /* Adjusted padding for medium screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .dealer-header {
+      padding: 40px 0;
+    }
+    
+    .dealer-header h1 {
+      font-size: 2rem;
+    }
+    
+    .dealer-application-form {
+      padding: 30px 20px;
+    }
+    
+    .benefits-grid,
+    .portal-features {
+      grid-template-columns: 1fr;
+    }
+    
+    .dealer-cta-section {
+      padding: 40px 20px;
+      margin: 30px 15px; /* Reduced margins on mobile */
+    }
+    
+    .container {
+      padding: 0 20px; /* Adjusted padding for mobile */
+    }
+    
+    .form-row {
+      flex-direction: column;
+      gap: 0;
+    }
+  }

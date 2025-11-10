@@ -1,0 +1,369 @@
+.contact-page {
+  padding-top: 70px; /* Adjust for fixed header */
+}
+
+.page-header {
+  background-color: #e85504; /* TruPath orange */
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.page-header:after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  margin-left: -20px;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #e85504;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.page-header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 50px;
+  margin-bottom: 60px;
+}
+
+.contact-info {
+  background-color: #f8f8f8;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-info:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  background-image: radial-gradient(#ddd 2px, transparent 2px);
+  background-size: 20px 20px;
+  opacity: 0.3;
+  z-index: 0;
+}
+
+.contact-info h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 30px;
+  position: relative;
+  padding-bottom: 15px;
+  z-index: 1;
+}
+
+.contact-info h2:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: #e85504;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 25px;
+  position: relative;
+  z-index: 1;
+}
+
+.info-icon {
+  color: #e85504;
+  font-size: 1.5rem;
+  margin-right: 15px;
+  margin-top: 5px;
+  flex-shrink: 0;
+}
+
+.info-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.info-item p {
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.contact-form-container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  border: 1px solid #eaeaea;
+}
+
+.contact-form-container h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 30px;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.contact-form-container h2:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: #e85504;
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+
+.form-group:nth-last-child(2),
+.form-group:last-child {
+  grid-column: span 2;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #e85504;
+}
+
+.contact-form button {
+  grid-column: span 2;
+  justify-self: start;
+  margin-top: 10px;
+}
+
+.form-success {
+  background-color: #e6f7e9;
+  border: 1px solid #c3e6cb;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+}
+
+.form-success h3 {
+  color: #28a745;
+  margin-bottom: 10px;
+}
+
+.form-success p {
+  color: #333;
+}
+
+/* CTA Section */
+.section-cta {
+  background: linear-gradient(135deg, #e85504, #ff8a50);
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+  border-radius: 10px;
+  margin: 50px 0;
+}
+
+.cta-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.cta-content h2 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.cta-content p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.cta-btns {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* Button styles */
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #e85504;
+  color: white;
+  border: 2px solid #e85504;
+}
+
+.btn-primary:hover {
+  background-color: #d14800;
+  border-color: #d14800;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #e85504;
+  border: 2px solid #e85504;
+}
+
+.btn-secondary:hover {
+  background-color: #e85504;
+  color: white;
+}
+
+.section-cta .btn-primary {
+  background-color: white;
+  color: #e85504;
+  border: 2px solid white;
+}
+
+.section-cta .btn-primary:hover {
+  background-color: transparent;
+  color: white;
+}
+
+.section-cta .btn-secondary {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.section-cta .btn-secondary:hover {
+  background-color: white;
+  color: #e85504;
+}
+
+.form-error {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #fff5f5;
+  border-left: 4px solid #f56565;
+  color: #c53030;
+}
+
+button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Responsive Adjustments - Improved for mobile */
+@media (max-width: 992px) {
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .contact-info {
+    order: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    padding: 40px 0;
+  }
+  
+  .page-header h1 {
+    font-size: 2rem;
+  }
+  
+  /* Improved mobile form layout */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 20px; /* Increased spacing between form fields on mobile */
+  }
+  
+  .form-group label {
+    font-size: 1rem;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    padding: 15px; /* Slightly larger touch targets on mobile */
+    font-size: 16px; /* Prevent zoom on iOS */
+  }
+  
+  .contact-form button {
+    width: 100%; /* Full width button on mobile */
+    padding: 15px;
+    margin-top: 20px;
+  }
+  
+  .section-cta {
+    margin: 30px 0;
+    padding: 40px 20px;
+  }
+  
+  .cta-btns {
+    flex-direction: column;
+    max-width: 250px;
+    margin: 0 auto;
+  }
+  
+  .contact-form-container {
+    padding: 30px 20px; /* Reduced padding on mobile */
+  }
+  
+  .contact-info {
+    padding: 30px 20px;
+  }
+}
