@@ -142,6 +142,31 @@
   position: relative;
   overflow: hidden;
 }
+
+.certificate-image{
+    height: 155px;
+  /* background-position: center;
+ position: relative;
+  overflow: hidden; */
+    background-size: cover;
+}
+
+.associations {
+  display: flex;
+  justify-content: center;   /* Center horizontally */
+  align-items: center;       /* Align vertically (optional) */
+  gap: 30px;                 /* Space between images */
+  margin-top: 20px;
+}
+
+.associations-image {
+  width: auto;              /* Same size for all */
+  height: 150px;
+  object-fit: contain;         /* Fits nicely without stretching */
+  border-radius: 8px;        /* Optional */
+  overflow: hidden;
+}
+
   
 .product-content {
   padding: 25px;

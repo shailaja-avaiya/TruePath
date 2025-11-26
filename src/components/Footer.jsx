@@ -12,7 +12,7 @@ const Footer = () => {
               <span style={{ color: '#e85504', fontWeight: 'bold', fontSize: '1.5rem' }}>TruPath</span>
             </div>
             <p style={{ color: '#aaa', marginBottom: '20px' }}>
-              TruPath Specialty Vehicles is a premier manufacturer of work trucks, specialty vehicles, 
+              TruPath Specialty Vehicles is a premier manufacturer of Delivery Trucks, specialty vehicles, 
               and buses designed to meet the unique needs of our customers.
             </p>
           </div>
@@ -20,7 +20,7 @@ const Footer = () => {
           <div className="footer-nav">
             <h4 style={{ fontSize: '18px', marginBottom: '20px', color: 'white' }}>Products</h4>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-              <li style={{ marginBottom: '12px' }}><Link to="/work-trucks" style={{ color: '#aaa' }}>Work Trucks</Link></li>
+              <li style={{ marginBottom: '12px' }}><Link to="/work-trucks" style={{ color: '#aaa' }}>Delivery Trucks</Link></li>
               <li style={{ marginBottom: '12px' }}><Link to="/specialty-vehicles" style={{ color: '#aaa' }}>Specialty Vehicles</Link></li>
               <li style={{ marginBottom: '12px' }}><Link to="/buses" style={{ color: '#aaa' }}>Buses</Link></li>
             </ul>

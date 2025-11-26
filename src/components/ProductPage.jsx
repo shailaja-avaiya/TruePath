@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom';
 import './ProductPage.css';
 import { FaInfoCircle, FaCheckCircle } from 'react-icons/fa';
 
-const ProductPage = ({ title, description, features, imageUrl, relatedProducts }) => {
+const ProductPage = ({ title, description, features, imageUrl, relatedProducts, quality, floorPlans }) => {
   return (
     <div className="product-page">
       {/* Product Header */}
       <div className="product-header">
         <div className="container">
           <h1>{title}</h1>
-          <p>{description}</p>
+          {/* <p>{description}</p> */}
         </div>
       </div>
       
@@ -20,17 +20,14 @@ const ProductPage = ({ title, description, features, imageUrl, relatedProducts }
           <div className="product-info">
             <h2>Overview</h2>
             <p className="product-description">{description}</p>
-            <p className="product-description">
-              TruPath's {title.toLowerCase()} are built to exacting standards, ensuring reliability, 
-              efficiency, and exceptional performance in all conditions.
-            </p>
+            
             <div className="action-buttons centered">
               <Link to="/contact" className="btn btn-primary">Request Information</Link>
             </div>
           </div>
           
           <div className="product-image-container">
-            <div className="product-quality-badge">Premium Quality</div>
+            <div className="product-quality-badge">{quality? quality : 'Premium Quality'}</div>
             <img src={imageUrl} alt={`TruPath ${title}`} />
           </div>
         </div>
@@ -46,6 +43,32 @@ const ProductPage = ({ title, description, features, imageUrl, relatedProducts }
               </div>
             ))}
           </div>
+        </div>
+
+        <div className="features-section-simple">
+          <h2>Available Floorplans</h2>
+           <div className='floorplan-section'>
+              {floorPlans.map((plans) => (
+                <div key={plans.id}  >
+                   <div className="floorplans">
+          
+     
+         
+        <img key={plans.id} src={plans.image} alt={`img-${plans.id}`} className="floorplan-image" />
+       
+     
+    </div>
+                  {/* <div 
+                    className="related-product-image" 
+                    style={{ backgroundImage: `url(${plans.image})` }}
+                  ></div> */}
+                  <div className="floorplan-title">
+                    <h3>{plans.title}</h3>
+                   
+                  </div>
+                </div>
+              ))}
+            </div>
         </div>
 
         {/* Related Products Section */}
