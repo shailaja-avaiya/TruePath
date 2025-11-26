@@ -45,7 +45,8 @@ const ProductPage = ({ title, description, features, imageUrl, relatedProducts, 
           </div>
         </div>
 
-        <div className="features-section-simple">
+        {floorPlans && (<div  className="features-section-simple">
+          
           <h2>Available Floorplans</h2>
            <div className='floorplan-section'>
               {floorPlans.map((plans) => (
@@ -69,7 +70,7 @@ const ProductPage = ({ title, description, features, imageUrl, relatedProducts, 
                 </div>
               ))}
             </div>
-        </div>
+</div>)}
 
         {/* Related Products Section */}
         {relatedProducts && relatedProducts.length > 0 && (
