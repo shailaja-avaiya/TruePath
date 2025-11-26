@@ -66,7 +66,7 @@ const Header = () => {
                     setIsMobileMenuOpen(false);
                   }}
                 >
-                  Work Trucks
+                  Delivery Trucks
                 </Link>
                 <Link 
                   to="/specialty-vehicles" 

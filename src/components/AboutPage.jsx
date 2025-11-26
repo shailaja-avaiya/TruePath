@@ -26,7 +26,7 @@ const AboutPage = () => {
                 In the heart of Elkhart, Indiana, where innovation meets craftsmanship, TruPath Specialty Vehicles was 
                 born from a shared passion for building vehicles that go beyond the ordinary. Our founders, with over 90* combined 
                 years of experience in the RV, manufacturing, and specialty vehicle industry, have spent decades 
-                perfecting the art of creating work trucks, buses, and specialty vehicles that deliver reliability and 
+                perfecting the art of creating Delivery Trucks, buses, and specialty vehicles that deliver reliability and 
                 individuality.
               </p>
               <p>

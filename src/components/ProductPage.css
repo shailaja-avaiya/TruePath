@@ -288,6 +288,43 @@
   flex-grow: 1;
 }
 
+.floorplan-title{
+    padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.floorplan-title h3{
+    padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+.floorplan-section{
+  display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.floorplans {
+  display: flex;
+  justify-content: center;   /* Center horizontally */
+  align-items: center;       /* Align vertically (optional) */
+  gap: 30px;                 /* Space between images */
+  margin-top: 20px;
+}
+
+.floorplan-image {
+  width: auto;              /* Same size for all */
+  height: 240px;
+  object-fit: contain;         /* Fits nicely without stretching */
+  border-radius: 8px;        /* Optional */
+  overflow: hidden;
+}
+
 .view-link {
   color: #e85504;
   font-weight: 600;

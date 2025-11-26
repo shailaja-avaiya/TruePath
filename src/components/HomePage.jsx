@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './HomePage.css';
 import workTruckImage from '../assets/work-truck.JPG'; 
+import nmedaImage from '../assets/nmeda-logo.png';
+import MSBMAImage from '../assets/MSBMA.png';
+import nteaImage from '../assets/NTEA-logo.svg';
+import braunImage from '../assets/braun.jpg';
 import specialtyVehicleImage from '../assets/specialty-vehicle.jpg';
 import busImage from '../assets/Bus.png';
 import { FaCalendarAlt, FaMapMarkerAlt } from 'react-icons/fa';
@@ -10,6 +14,13 @@ const HomePage = () => {
   const [emailSignup, setEmailSignup] = useState('');
   const [signupSuccess, setSignupSuccess] = useState(false);
   const [signupConsent, setSignupConsent] = useState(false);
+
+  const images = [
+    nmedaImage,
+    MSBMAImage,
+    nteaImage,
+    braunImage  
+  ]
   
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -36,7 +47,7 @@ const HomePage = () => {
             <h1>Premium Transportation Solutions</h1>
             <p className="hero-tagline">Your Vision, Our Road</p>
             <p>
-              Work trucks, specialty vehicles, and buses 
+              Delivery Trucks, specialty vehicles, and buses 
               customized to meet your specific requirements.
             </p>
             <div className="hero-btns">
@@ -61,35 +72,35 @@ const HomePage = () => {
           
           <div className="product-grid">
             <div className="product-card">
-              <div className="product-category-badge">Work Trucks</div>
+              <div className="product-category-badge">Delivery Trucks</div>
               <div 
                 className="product-image" 
                 style={{ backgroundImage: `url(${workTruckImage})` }}
               ></div>
               <div className="product-content">
-                <h3>Work Trucks</h3>
+                <h3>Delivery Trucks</h3>
                 <p>
-                  Durable, efficient work trucks designed for productivity and reliability in demanding environments.
+                  Durable, efficient Delivery Trucks designed for productivity and reliability in demanding environments.
                 </p>
                 <Link to="/work-trucks" className="btn-text">
-                  View Work Trucks <span>&rarr;</span>
+                  View Delivery Trucks <span>&rarr;</span>
                 </Link>
               </div>
             </div>
             
             <div className="product-card">
-              <div className="product-category-badge">Specialty</div>
+              <div className="product-category-badge">Specialty Vehicles</div>
               <div 
                 className="product-image" 
                 style={{ backgroundImage: `url(${specialtyVehicleImage})` }}
               ></div>
               <div className="product-content">
-                <h3>Specialty Vehicles</h3>
+                <h3>Specialty & Work Vehicles</h3>
                 <p>
                   Custom-designed specialty vehicles for unique applications and specific industry requirements.
                 </p>
                 <Link to="/specialty-vehicles" className="btn-text">
-                  View Specialty Vehicles <span>&rarr;</span>
+                  View Specialty & Work Vehicles <span>&rarr;</span>
                 </Link>
               </div>
             </div>
@@ -113,7 +124,26 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+      {/* Member Certifications and Associations Section */}
+      <section className=" products">
+        <div className="container">
+          <div className="section-header text-center">
+            <h2>TPSV Member Certifications and Associations</h2>
+           
+          </div>
 
+         <div className="associations">
+          
+      {images.map((src, i) => (
+         
+        <img key={i} src={src} alt={`img-${i}`} className="associations-image" />
+       
+      ))}
+    </div>
+          
+          
+        </div>
+      </section>
       {/* Gallery Section Placeholder */}
       <section className="section gallery-section">
         <div className="container">
@@ -127,7 +157,7 @@ const HomePage = () => {
           <div className="gallery-placeholder">
             <p>Image Gallery Coming Soon</p>
             <span>
-              Check back soon to see our portfolio of work trucks, specialty vehicles, and buses.
+              Check back soon to see our portfolio of Delivery Trucks, specialty vehicles, and buses.
             </span>
           </div>
         </div>
