@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './HomePage.css';
-import workTruckImage from '../assets/work-truck.JPG'; 
+import workTruckImage from '../assets/BoxTruck.jpg'; 
 import nmedaImage from '../assets/nmeda-logo.png';
 import MSBMAImage from '../assets/MSBMA.png';
 import nteaImage from '../assets/NTEA-logo.svg';
 import braunImage from '../assets/braun.jpg';
 import specialtyVehicleImage from '../assets/specialty-vehicle.jpg';
-import busImage from '../assets/Bus.png';
+import busImage from '../assets/BusImage.jpg';
 import { FaCalendarAlt, FaMapMarkerAlt } from 'react-icons/fa';
 
 const HomePage = () => {
@@ -20,6 +20,45 @@ const HomePage = () => {
     MSBMAImage,
     nteaImage,
     braunImage  
+  ]
+
+  const UpcomingEvents = [
+    {
+      id: 1,
+      title: "National Work Truck Show 2025",
+      month: "March",
+      date: "10-13",
+      location: "Indianapolis Convention Center, IN",
+      description:"",
+      meet_link:""
+    },
+    {
+      id: 2,
+      title: "Midwest Transportation Expo",
+      month: "Jul",
+      date: "22-24",
+      location: "Chicago Exhibition Center, IL",
+      description:"",
+      meet_link:""
+    },
+    {
+      id: 3,
+      title: "Community Transportation Association of America Show",
+      month: "May",
+      date: "10-13",
+      location: "Omaha, Nebraska",
+      description:"",
+      meet_link:"https://ctaa.org/ctaa-events/"
+    },
+    {
+      id: 4,
+      title: "APTA Conference",
+      month: "May",
+      date: "17-20",
+      location: "Salt Lake City, Utah",
+      description:"",
+      meet_link:"https://aptapassengertransport.com/register-for-apta-2026-mobility-conference-international-bus-roadeo/"
+    }
   ]
   
   const handleSubmit = (e) => {
@@ -47,7 +86,7 @@ const HomePage = () => {
             <h1>Premium Transportation Solutions</h1>
             <p className="hero-tagline">Your Vision, Our Road</p>
             <p>
-              Delivery Trucks, specialty vehicles, and buses 
+              Box Trucks, specialty vehicles, and buses 
               customized to meet your specific requirements.
             </p>
             <div className="hero-btns">
@@ -72,18 +111,18 @@ const HomePage = () => {
           
           <div className="product-grid">
             <div className="product-card">
-              <div className="product-category-badge">Delivery Trucks</div>
+              <div className="product-category-badge">Box Trucks</div>
               <div 
                 className="product-image" 
                 style={{ backgroundImage: `url(${workTruckImage})` }}
               ></div>
               <div className="product-content">
-                <h3>Delivery Trucks</h3>
+                <h3>Box Trucks</h3>
                 <p>
-                  Durable, efficient Delivery Trucks designed for productivity and reliability in demanding environments.
+                  Durable, efficient Box Trucks designed for productivity and reliability in demanding environments.
                 </p>
                 <Link to="/work-trucks" className="btn-text">
-                  View Delivery Trucks <span>&rarr;</span>
+                  View Box Trucks <span>&rarr;</span>
                 </Link>
               </div>
             </div>
@@ -152,19 +191,20 @@ const HomePage = () => {
             <p>
               Explore our gallery of recently delivered vehicles and customization options.
             </p>
+            
           </div>
           
           <div className="gallery-placeholder">
             <p>Image Gallery Coming Soon</p>
             <span>
-              Check back soon to see our portfolio of Delivery Trucks, specialty vehicles, and buses.
+              Check back soon to see our portfolio of Box Trucks, specialty vehicles, and buses.
             </span>
           </div>
         </div>
       </section>
       
       {/* Upcoming Events Section */}
-      <section className="section events-section bg-pattern">
+      <section className="section events-section ">
         <div className="container">
           <div className="section-header text-center">
             <h2>Upcoming Events</h2>
@@ -174,25 +214,27 @@ const HomePage = () => {
           </div>
           
           <div className="events-grid">
-            <div className="event-card">
-              <div className="event-date">
-                <span className="month">JUN</span>
-                <span className="day">15-17</span>
-              </div>
-              <div className="event-info">
-                <h3>National Work Truck Show 2025</h3>
-                <div className="event-location">
-                  <FaMapMarkerAlt className="event-icon" />
-                  <span>Indianapolis Convention Center, IN</span>
+            {UpcomingEvents.map((event) => (
+              <div key={event.id} className="event-card">
+                <div className="event-date">
+                  <span className="month">{event.month}</span>
+                  <span className="day">{event.date}</span>
                 </div>
-                <p>
-                  Join us at booth #1234 to explore our latest work truck models and customization options.
-                </p>
-                <Link to="/contact" className="btn-text">
-                  Request Meeting <span>&rarr;</span>
-                </Link>
+                <div className="event-info">
+                  <h3>{event.title}</h3>
+                  <div className="event-location">
+                    <FaMapMarkerAlt className="event-icon" />
+                    <span>{event.location}</span>
+                  </div>
+                  {/* <p>
+                    Join us at booth #1234 to explore our latest work truck models and customization options.
+                  </p> */}
+                  <Link to={event.meet_link ?? event.meet_link} className="btn-text">
+                    Request Meeting <span>&rarr;</span>
+                  </Link>
+                </div>
               </div>
-            </div>
+            ))}
             
             <div className="event-card">
               <div className="event-date">

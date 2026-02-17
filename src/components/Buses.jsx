@@ -1,7 +1,7 @@
 import React from 'react';
 import ProductPage from './ProductPage';
-import busImage from '../assets/Bus.png';
-import truckImage from '../assets/work-truck.JPG';
+import busImage from '../assets/BusImage.jpg';
+import truckImage from '../assets/BoxTruck.jpg';
 import specialtyVehicleImage from '../assets/specialty-vehicle.jpg';
 import FP12PImage from '../assets/floorplan-12P.png';
 import FP14PImage from '../assets/floorplan-14P.png';
@@ -9,8 +9,9 @@ import FP16PImage from '../assets/floorplan-16P.png';
 import FP23PImage from '../assets/floorplan-23P.png';
 const Buses = () => {
   const pageData = {
+    id: 3,
     title: "Buses",
-    description: "Comfortable, accessible buses built for passenger safety and operational efficiency.",
+    description: "Superior designed and quality built buses which can safely reduce crowding, facilitate rapid passenger boarding and exiting, and can maximize the comfort of all passengers.  True Path buses undergo rigorous testing and certification to ensure that they meet or exceed all federal safety regulations.  TPSV has partnered and conformed to all vehicle standards with all the major automotive OEM's to build the best in class bus on virtually any cutaway chassis currently produced from the following automotive OEM's: Ford, GM, Dodge, Mercedes, and Freightliner.",
     features: [
       "Passenger capacities from 12 to 35+",
       "ADA-compliant accessibility features",
@@ -25,8 +26,8 @@ const Buses = () => {
     relatedProducts: [
       {
         id: 1,
-        title: "Delivery Trucks",
-        description: "Durable, efficient Delivery Trucks designed for productivity and reliability in demanding environments.",
+        title: "Box Trucks",
+        description: "Durable, efficient Box Trucks designed for productivity and reliability in demanding environments.",
         image: truckImage,
         link: "/work-trucks"
       },

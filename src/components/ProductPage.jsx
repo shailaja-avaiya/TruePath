@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './ProductPage.css';
 import { FaInfoCircle, FaCheckCircle } from 'react-icons/fa';
 
-const ProductPage = ({ title, description, features, imageUrl, relatedProducts, quality, floorPlans }) => {
+const ProductPage = ({ id,title, description, features, imageUrl, relatedProducts, quality, floorPlans }) => {
   return (
     <div className="product-page">
       {/* Product Header */}
@@ -34,7 +34,7 @@ const ProductPage = ({ title, description, features, imageUrl, relatedProducts, 
 
         {/* Features Section - SIMPLIFIED */}
         <div className="features-section-simple">
-          <h2>Key Features</h2>
+          <h2>{ id == 2 ? "Key Features & Applications" : "Key Features"}</h2>
           <div className="features-container">
             {features.map((feature, index) => (
               <div className="feature-bullet" key={index}>

@@ -8,7 +8,6 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isProductsDropdownOpen, setIsProductsDropdownOpen] = useState(false);
-
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -30,6 +29,7 @@ const Header = () => {
 
   const toggleProductsDropdown = () => {
     setIsProductsDropdownOpen(!isProductsDropdownOpen);
+
   };
 
   return (
@@ -50,15 +50,15 @@ const Header = () => {
             <Link to="/" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
             
             {/* Products Dropdown */}
-            <div className="dropdown-container">
+            <div className="dropdown-container" >
               <button 
                 className="dropdown-toggle" 
-                onClick={toggleProductsDropdown}
+                onClick={toggleProductsDropdown} onBlur={toggleProductsDropdown}
               >
                 Our Products <FaChevronDown className={`dropdown-icon ${isProductsDropdownOpen ? 'open' : ''}`} />
               </button>
               
-              <div className={`dropdown-menu ${isProductsDropdownOpen ? 'open' : ''}`}>
+              <div className={`dropdown-menu ${ isProductsDropdownOpen ? 'open' : ''}`}>
                 <Link 
                   to="/work-trucks" 
                   onClick={() => {
@@ -66,7 +66,7 @@ const Header = () => {
                     setIsMobileMenuOpen(false);
                   }}
                 >
-                  Delivery Trucks
+                  Box Trucks
                 </Link>
                 <Link 
                   to="/specialty-vehicles" 
