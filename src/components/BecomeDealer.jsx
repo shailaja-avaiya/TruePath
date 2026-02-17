@@ -58,7 +58,7 @@ const BecomeDealer = () => {
           <div className="partner-section">
             <h2>Partner with TPSV: Drive Profit with Proven Expertise</h2>
             <p>
-              Join TruPath Specialty Vehicles' exclusive dealer network and tap into our innovative lineup of Delivery Trucks, 
+              Join TruPath Specialty Vehicles' exclusive dealer network and tap into our innovative lineup of Box Trucks, 
               specialty vehicles, and buses, backed by over 30 years of RV industry leadership. From our base in Elkhart, 
               Indiana, the RV capital of the world, TPSV empowers dealers with:
             </p>

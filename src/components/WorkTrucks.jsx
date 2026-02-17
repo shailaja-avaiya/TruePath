@@ -1,12 +1,13 @@
 import React from 'react';
 import ProductPage from './ProductPage';
-import truckImage from '../assets/work-truck.JPG';
+import truckImage from '../assets/BoxTruck.jpg';
 import specialtyVehicleImage from '../assets/specialty-vehicle.jpg';
-import busImage from '../assets/Bus.png';
+import busImage from '../assets/BusImage.jpg';
 
 const WorkTrucks = () => {
   const pageData = {
-    title: "Delivery Trucks",
+    id:1,
+    title: "Box Trucks",
     description: "Durable commercial vehicle bodies built with the best in class materials from the ground up to meet your specifications.  Designed and built for the; job site, service on location, or simply delivering products daily to customers, TPSV provides solutions for your business needs.  TPSV has partnered with GM, Ford, and Mercedes to offer commercial bodies on any truck or van cutaway application to service any industry.  Whether you need to carry dry freight or refrigerated cargo, TPSV has you covered.",
     features: [
 "8' wide body X  13'-6\" (overall body height) X 21' maximum body length (on E-450 cutaway)",
@@ -20,7 +21,8 @@ const WorkTrucks = () => {
 "Aluminum, hardwood, or plywood flooring",
 "Refrigerated bodies",
 "Lift gates up to 2000#'s",
-"Diamond or Whiting roll up doors"
+"Diamond or Whiting roll up doors",
+"Tuff coat polyurea coating over all floor substrates"
      
     ],
     imageUrl: truckImage,
