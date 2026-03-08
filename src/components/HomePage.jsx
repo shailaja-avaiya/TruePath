@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './HomePage.css';
+import Gallery from './Gallery';
 import workTruckImage from '../assets/BoxTruck.jpg'; 
 import nmedaImage from '../assets/nmeda-logo.png';
 import MSBMAImage from '../assets/MSBMA.png';
@@ -8,6 +9,14 @@ import nteaImage from '../assets/NTEA-logo.svg';
 import braunImage from '../assets/braun.jpg';
 import specialtyVehicleImage from '../assets/specialty-vehicle.jpg';
 import busImage from '../assets/BusImage.jpg';
+import BusBraunLift from '../assets/Gallery/Bus/BusBraunLift.jpg';
+import BusClothFront from '../assets/Gallery/Bus/BusClothFront.jpg';
+import BusDoorPort from '../assets/Gallery/Bus/BusDoorPort.jpg';
+import BusDriverAngle from '../assets/Gallery/Bus/BusDriverAngle.jpg';
+import BusInside from '../assets/Gallery/Bus/BusInside.jpg';
+import BusPassAngle from '../assets/Gallery/Bus/BusPassAngle.jpg';
+import BusPassSide from '../assets/Gallery/Bus/BusPassSide.jpg';
+
 import { FaCalendarAlt, FaMapMarkerAlt } from 'react-icons/fa';
 
 const HomePage = () => {
@@ -20,6 +29,16 @@ const HomePage = () => {
     MSBMAImage,
     nteaImage,
     braunImage  
+  ]
+
+  const busGallery = [
+    BusBraunLift,
+    BusClothFront,
+    BusDoorPort,
+    BusDriverAngle,
+    BusInside,
+    BusPassAngle,
+    BusPassSide
   ]
 
   const UpcomingEvents = [
@@ -60,6 +79,33 @@ const HomePage = () => {
       meet_link:"https://aptapassengertransport.com/register-for-apta-2026-mobility-conference-international-bus-roadeo/"
     }
   ]
+
+   const vehicleData = {
+  "Buses": [
+    {
+      name: "Bus",
+      images: 
+        busGallery,
+     
+    },
+  ],
+  "Box Trucks": [
+    {
+      name: "Box Truck",
+      images: [
+       
+      ],
+    },
+  ],
+  "Specialty Vehicles": [
+    {
+      name: "Specialty Vehicles",
+      images: [
+       
+      ],
+    },
+  ],
+};
   
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -193,13 +239,19 @@ const HomePage = () => {
             </p>
             
           </div>
+
+          <Gallery
+  categories={vehicleData}
+  autoPlay
+  autoPlayInterval={4000}
+/>
           
-          <div className="gallery-placeholder">
+          {/* <div className="gallery-placeholder">
             <p>Image Gallery Coming Soon</p>
             <span>
               Check back soon to see our portfolio of Box Trucks, specialty vehicles, and buses.
             </span>
-          </div>
+          </div> */}
         </div>
       </section>
       

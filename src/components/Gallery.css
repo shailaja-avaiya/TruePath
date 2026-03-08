@@ -1,0 +1,88 @@
+.vs-wrapper {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+   font-weight: 500;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.vs-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.vs-tab {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  background: #eee;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s;
+  font-family: inherit !important;
+  font-size: medium;
+  
+}
+.vs-tab:hover {
+  background: #e85504;
+  color: white;}
+  
+.vs-tab.active {
+  background: #e85504;
+  color: white;
+}
+
+.vs-slider {
+  text-align: center;
+  position: relative;
+}
+
+.vs-title {
+  margin-bottom: 15px;
+}
+
+.vs-image-container {
+  position: relative;
+}
+
+.vs-image {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.vs-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #e85504;
+  border: none;
+  color: white;
+  font-size: 24px;
+  padding: 8px 14px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.vs-nav.left {
+  left: 15px;
+}
+
+.vs-nav.right {
+  right: 15px;
+}
+
+.vs-vehicle-controls {
+  margin-top: 15px;
+}
+
+.vs-vehicle-controls button {
+  margin: 0 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+}

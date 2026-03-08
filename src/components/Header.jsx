@@ -59,6 +59,15 @@ const Header = () => {
               </button>
               
               <div className={`dropdown-menu ${ isProductsDropdownOpen ? 'open' : ''}`}>
+                 <Link 
+                  to="/buses" 
+                  onClick={() => {
+                    setIsProductsDropdownOpen(false);
+                    setIsMobileMenuOpen(false);
+                  }}
+                >
+                  Buses
+                </Link>
                 <Link 
                   to="/work-trucks" 
                   onClick={() => {
@@ -77,15 +86,7 @@ const Header = () => {
                 >
                   Specialty Vehicles
                 </Link>
-                <Link 
-                  to="/buses" 
-                  onClick={() => {
-                    setIsProductsDropdownOpen(false);
-                    setIsMobileMenuOpen(false);
-                  }}
-                >
-                  Buses
-                </Link>
+               
               </div>
             </div>
             
