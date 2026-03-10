@@ -16,6 +16,14 @@ import BusDriverAngle from '../assets/Gallery/Bus/BusDriverAngle.jpg';
 import BusInside from '../assets/Gallery/Bus/BusInside.jpg';
 import BusPassAngle from '../assets/Gallery/Bus/BusPassAngle.jpg';
 import BusPassSide from '../assets/Gallery/Bus/BusPassSide.jpg';
+import BoxImg1 from '../assets/Gallery/BoxTrucks/IMG_0733.jpg'; 
+import BoxImg2 from '../assets/Gallery/BoxTrucks/IMG_0738.jpg'; 
+import BoxImg3 from '../assets/Gallery/BoxTrucks/IMG_0741.jpg'; 
+import BoxImg4 from '../assets/Gallery/BoxTrucks/IMG_0745.JPG'; 
+import BoxImg5 from '../assets/Gallery/BoxTrucks/IMG_0760.jpg'; 
+import BoxImg6 from '../assets/Gallery/BoxTrucks/IMG_0770.jpg'; 
+import BoxImg7 from '../assets/Gallery/BoxTrucks/IMG_0797.jpg'; 
+import BoxImg8 from '../assets/Gallery/BoxTrucks/IMG_0831.jpg'; 
 
 import { FaCalendarAlt, FaMapMarkerAlt } from 'react-icons/fa';
 
@@ -39,6 +47,17 @@ const HomePage = () => {
     BusInside,
     BusPassAngle,
     BusPassSide
+  ]
+
+  const boxTruckGallery = [
+    BoxImg1,
+    BoxImg2,  
+    BoxImg3,
+    BoxImg4,
+    BoxImg5,    
+    BoxImg6,
+    BoxImg7,
+    BoxImg8
   ]
 
   const UpcomingEvents = [
@@ -92,9 +111,7 @@ const HomePage = () => {
   "Box Trucks": [
     {
       name: "Box Truck",
-      images: [
-       
-      ],
+      images: boxTruckGallery
     },
   ],
   "Specialty Vehicles": [
@@ -156,6 +173,22 @@ const HomePage = () => {
           </div>
           
           <div className="product-grid">
+             <div className="product-card">
+              <div className="product-category-badge">Buses</div>
+              <div 
+                className="product-image" 
+                style={{ backgroundImage: `url(${busImage})` }}
+              ></div>
+              <div className="product-content">
+                <h3>Buses</h3>
+                <p>
+                  Comfortable, accessible buses built for passenger safety and operational efficiency.
+                </p>
+                <Link to="/buses" className="btn-text">
+                  View Buses <span>&rarr;</span>
+                </Link>
+              </div>
+            </div>
             <div className="product-card">
               <div className="product-category-badge">Box Trucks</div>
               <div 
@@ -190,22 +223,7 @@ const HomePage = () => {
               </div>
             </div>
             
-            <div className="product-card">
-              <div className="product-category-badge">Buses</div>
-              <div 
-                className="product-image" 
-                style={{ backgroundImage: `url(${busImage})` }}
-              ></div>
-              <div className="product-content">
-                <h3>Buses</h3>
-                <p>
-                  Comfortable, accessible buses built for passenger safety and operational efficiency.
-                </p>
-                <Link to="/buses" className="btn-text">
-                  View Buses <span>&rarr;</span>
-                </Link>
-              </div>
-            </div>
+           
           </div>
         </div>
       </section>
