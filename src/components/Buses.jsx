@@ -3,10 +3,14 @@ import ProductPage from './ProductPage';
 import busImage from '../assets/BusImage.jpg';
 import truckImage from '../assets/BoxTruck.jpg';
 import specialtyVehicleImage from '../assets/specialty-vehicle.jpg';
-import FP12PImage from '../assets/floorplan-12P.png';
-import FP14PImage from '../assets/floorplan-14P.png';
-import FP16PImage from '../assets/floorplan-16P.png';
-import FP23PImage from '../assets/floorplan-23P.png';
+import FP12PImage from '../assets/FloorPlans/Bus/floorplan-12P.png';
+import FP14PImage from '../assets/FloorPlans/Bus/floorplan-14P.png';
+import FP16PImage from '../assets/FloorPlans/Bus/floorplan-16P.png';
+import FP23PImage from '../assets/FloorPlans/Bus/floorplan-23P.png';
+import FP24PImage from '../assets/FloorPlans/Bus/floorplan-24p.jpg';
+import FP10P2Transit from '../assets/FloorPlans/Bus/floorplan-transit10P2.jpg';
+import FP12P2Transit from '../assets/FloorPlans/Bus/floorplan-transit12P2.jpg';
+
 const Buses = () => {
   const pageData = {
     id: 3,
@@ -58,6 +62,18 @@ const Buses = () => {
         id: 4,
         title: "23 Passenger with Rear Luggage",
         image: FP23PImage,
+      },{
+        id: 5,
+        title: "24 Passenger with Rear Luggage",
+        image: FP24PImage,
+      },{
+        id: 6,
+        title: "10 Passenger 2 Wheelchair Transit",
+        image: FP10P2Transit,
+      },{
+        id: 7,
+        title: "12 Passenger 2 Wheelchair Transit",
+        image: FP12P2Transit,
       }
     ]
   };
