@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaTools, FaHandshake, FaLightbulb, FaTrophy, FaUsers, FaIndustry, FaBuilding } from 'react-icons/fa';
 import './AboutPage.css';
-import aboutImage from '../assets/building.png'; // Add a placeholder image for the facility
+import aboutusImage from '../assets/building.png'; // Add a placeholder image for the facility
 
 const AboutPage = () => {
   return (
@@ -18,7 +18,7 @@ const AboutPage = () => {
         <div className="container">
           <div className="about-content">
             <div className="about-image">
-              <img src={aboutImage} alt="TruPath Facility" />
+              <img src={aboutusImage} alt="TruPath Facility" />
             </div>
             <div className="about-text">
               <h2>Our Story</h2>
