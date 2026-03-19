@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaTools, FaHandshake, FaLightbulb, FaTrophy, FaUsers, FaIndustry, FaBuilding } from 'react-icons/fa';
 import './AboutPage.css';
-import aboutImage from '../assets/building.jpeg'; // Add a placeholder image for the facility
+import aboutImage from '../assets/building.png'; // Add a placeholder image for the facility
 
 const AboutPage = () => {
   return (
