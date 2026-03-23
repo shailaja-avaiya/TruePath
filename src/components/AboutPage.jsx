@@ -147,7 +147,7 @@ const AboutPage = () => {
             </div>
           </div>
           
-          <div className="leadership-section">
+          {/* <div className="leadership-section">
             <h2>Our Leadership Team</h2>
             <p className="leadership-intro">
               Our experienced leadership team combines decades of industry expertise, innovative thinking, and a passion for crafting 
@@ -200,7 +200,7 @@ const AboutPage = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
       
